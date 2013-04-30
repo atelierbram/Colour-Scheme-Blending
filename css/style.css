@@ -1,0 +1,351 @@
+* { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; 
+}
+
+/* http://www.html5rocks.com/en/tutorials/dnd/basics/ */ 
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.unit {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 1em; 
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  cursor: move;
+} 
+.unit span {
+  position: absolute;
+  display: block;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; 
+  font-size: .8em;
+  opacity: .15; 
+} 
+.unit .sp-10 { 
+  opacity: 1; 
+  line-height: 1.25;
+}
+.line .c-dark,
+.unit .c-dark { 
+  color: black;
+} 
+.line .c-light,
+.unit .c-light,
+.c-2 { 
+  color: white;
+} 
+.c-1 { 
+  background-color: white;
+} 
+.c-2 { 
+  background-color: black;
+} 
+/* C: Lemon Zest */ 
+.c-3 { 
+  background-color: #FFDF5E;
+  background-color: hsl(48, 100%, 68%);
+}
+/* D: Tender Shoots */
+.c-4 { 
+  background-color: #BFD74B;
+  background-color: hsl(70, 64%, 57%);
+}
+/* E: Grayed Jade*/
+.c-5 { 
+  background-color: #98CCB6;
+  background-color: hsl(155, 34%, 70%);
+}
+/* F: Emerald */
+.c-6 { 
+  background-color: #00A78D;
+  background-color: hsl(171, 100%, 33%);
+}
+/* G: Dusk Blue*/
+.c-7 { 
+  background-color: #7DB6D3;
+  background-color: hsl(200, 49%, 66%);
+}
+/* H: Monaco Blue */
+.c-8 { 
+  background-color: #154478;
+  background-color: hsl(212, 70%, 28%);
+}
+/* I: African Violet */
+.c-9 { 
+  background-color: #B995C5;
+  background-color: hsl(285, 29%, 68%);
+} 
+/* J: Linen  */
+.c-10 { 
+  background-color: #F8DFC9;
+  background-color: hsl(28, 77%, 88%);
+} 
+/* K: Poppy Red */
+.c-11 { 
+  background-color: #D9302B;
+  background-color: hsl(2, 70%, 51%);
+}
+/* L: Nectarine */
+.c-12 { 
+  background-color: #F68E51;
+  background-color: hsl(22, 90%, 64%);
+} 
+body {
+  font: 100%/1.375 AvenirNextCondensed-Regular, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Segoe Ui", Optima, "Trebuchet MS", Geneva, "Bitstream Vera Sans", "DejaVu Sans", Verdana, sans-serif; 
+  background-color: #eee;
+  color: #000; 
+  position: relative;
+} 
+.header, .footer {
+  text-align: center;
+  display: block; 
+  border-top: 1px solid #BA1920;
+  border-bottom: 1px solid #811116;
+}
+a, a:link {  
+  text-decoration: none;
+  color: #811116;
+} 
+.header a, 
+.footer a {  
+  display: block;
+  color: #FFF7F2;
+  text-shadow: 1px 1px 3px hsla(0,0%,0%,.5);
+  padding-top: .5em;
+}
+.footer a {
+  padding-bottom: .5em;
+} 
+.header {  
+  font-family: AvenirNextCondensed-DemiBold, "Lucida Grande", "Lucida Sans", "Segoe Ui", "Trebuchet MS", sans-serif; 
+  height: 94px;
+}
+.footer {
+  height: 40px;
+  /* padding-bottom: 12px; */
+}
+.title {  
+  color: #FFF7F2;
+  font-size: 2em;
+  text-transform: capitalize; 
+} 
+.tagline {  
+  font-size: 1.125em;
+  color: #3D0C0A;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #BA1920;
+} 
+
+.unit {
+  float: left;
+} 
+.container-cols {
+  margin: 1.5em auto 3em;
+} 
+.container-cols,
+.col,
+.line { 
+  overflow: auto;
+}
+.col { 
+  width: 50%;
+} 
+.col-left,
+.col-left .unit { 
+  float: left;
+} 
+.col-right, 
+.col-right .unit { 
+  float: right;
+} 
+.c-name {
+  display: inline-block;
+  padding: 1em;
+} 
+.sp-1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+}
+.sp-2 {
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%; 
+}
+.sp-3 {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%; 
+}
+.sp-4 {
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%; 
+}
+.sp-5 {
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%; 
+}
+.sp-6 {
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%; 
+}
+.sp-7 {
+  width: 40%;
+  height: 40%;
+  top: 30%;
+  left: 30%; 
+}
+.sp-8 {
+  width: 30%;
+  height: 30%;
+  top: 35%;
+  left: 35%; 
+}
+.sp-9 {
+  width: 20%;
+  height: 20%;
+  top: 40%;
+  left: 40%; 
+}
+.sp-10 {
+  width: 10%;
+  height: 10%;
+  top: 45%;
+  left: 45%; 
+}
+.count {
+  height: 100%;
+} 
+.bt,
+.bb {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  z-index: 1;
+} 
+.bt {
+  top: 96px;
+}
+.bb {
+  bottom: 42px;
+  border-top: 1px solid #BA1920;
+} 
+.bt--sp {
+  float: left;
+  width: 10%;
+  height: 12px;
+  /* display: block; */
+}
+.subfooter {
+  margin: 1em auto;
+  width: 40%;
+  padding: 1em; 
+}
+.subfooter ul {
+  list-style-type: none; 
+  color: #087282;
+}
+.subfooter li {
+  display: block;
+} 
+.subfooter a {
+  display: block;
+  padding: .25em; 
+} 
+.subfooter a:focus,
+.subfooter a:hover { 
+  background-color: #00A78D;
+  color: #fff; 
+}
+h3 { 
+  color: #087282;
+}
+head {display: block;}
+style[contenteditable] {
+  font: .75em/1.33 Consolas, "DejaVu Sans Mono", Monaco, monospace;
+  white-space: pre;
+  padding: 0.5em;
+  background: white;
+  background: hsla(360, 100%, 100%, 0.5);
+  display: none;
+}
+
+@media only screen and (min-width: 454px) {
+  .unit {
+    height: 150px;
+    width: 150px;
+  } 
+  .unit .sp-10 { 
+    line-height: 1.5;
+  } 
+} 
+@media only screen and (min-width: 600px) {
+  .container-cols {
+    width: 37.5em;
+    box-shadow: 0px 12px 24px #888;
+  }
+  .unit {
+    height: 200px;
+    width: 200px;
+  } 
+  .unit .sp-10 { 
+    line-height: 1.75;
+  } 
+}  
+@media only screen and (min-width: 800px) {
+  .container-cols {
+    width: 50em;
+  }
+  .unit {
+    height: 300px;
+    width: 300px;
+  } 
+  .unit .sp-10 { 
+    line-height: 2.5;
+  } 
+} 
+@media only screen and (min-width: 1200px) {
+  style[contenteditable] { 
+    display: block; 
+    position: fixed;
+    width: 312px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+} 
+
+/* Fashion Color Report Collection - Women’s Spring 2013
+ * http://www.pantone.com/pages/products/product.aspx?pid=1333&ca=4 
+ * http://www.pantone.com/pages/pantone/color_xref.aspx
+ * http://www.thecolorswatch.com/
+ * http://marivecchio.blogspot.nl/2013/01/fata-e-strega-insiemein-primavera-si-puo.html
+ */
+ 

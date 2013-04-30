@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Colour Scheme Blending Tool</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"> 
+<style type="text/css" contenteditable>
+/* Edit the background-colors here */
+ .unit span {
+   opacity: .15; 
+ } 
+/* A: White */
+.c-1 { 
+  background-color: hsla(0, 100%, 100%);
+} 
+/* B: Black */
+.c-2 { 
+  background-color: hsl(0, 0%, 0%)
+} 
+/* C: Lemon Zest */ 
+.c-3 { 
+  background-color: hsl(48, 100%, 68%);
+}
+/* D: Tender Shoots */
+.c-4 { 
+  background-color: hsl(70, 64%, 57%);
+}
+/* E: Grayed Jade*/
+.c-5 { 
+  background-color: hsl(155, 34%, 70%);
+}
+/* F: Emerald */
+.c-6 { 
+  background-color: hsl(171, 100%, 33%);
+}
+/* G: Dusk Blue*/
+.c-7 { 
+  background-color: hsl(200, 49%, 66%);
+}
+/* H: Monaco Blue */
+.c-8 { 
+  background-color: hsl(212, 70%, 28%);
+}
+/* I: African Violet */
+.c-9 { 
+  background-color: hsl(285, 29%, 68%);
+} 
+/* J: Linen  */
+.c-10 { 
+  background-color: hsl(28, 77%, 88%);
+} 
+/* K: Poppy Red */
+.c-11 { 
+  background-color: hsl(2, 70%, 51%);
+}
+/* L: Nectarine */
+.c-12 { 
+  background-color: hsl(22, 90%, 64%);
+} 
+</style>
+
+  </head>
+  <body>
+
+<header class="header c-11">
+  <h1 class="title">
+    <a href="http://codepen.io/atelierbram/pen/IrGzb">colour scheme blending tool</a></h1>
+  <p class="tagline c-11">
+  drag and drop circles; use a colourpicker to get blends 
+  </p>                          
+</header> 
+
+<div class="container-cols"> 
+<div class="col col-left">
+ <div class="line c-1">
+  <div class="unit unit-1"> 
+    <div class="count" data-col-moves="0"></div>
+     <span class="sp-1 c-2"></span><span class="sp-2 c-2"></span><span class="sp-3 c-2"></span><span class="sp-4 c-2"></span><span class="sp-5 c-2"></span><span class="sp-6 c-2"></span><span class="sp-7 c-2"></span><span class="sp-8 c-2"></span><span class="sp-9 c-2"></span><span class="sp-10 c-2">B</span> 
+ </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-2">
+  <div class="unit unit-2"> 
+    <div class="count" data-col-moves="0"></div>
+     <span class="sp-1 c-1"></span><span class="sp-2 c-1"></span><span class="sp-3 c-1"></span><span class="sp-4 c-1"></span><span class="sp-5 c-1"></span><span class="sp-6 c-1"></span><span class="sp-7 c-1"></span><span class="sp-8 c-1"></span><span class="sp-9 c-1"></span><span class="sp-10 c-1 c-dark">A</span> 
+ </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-3">
+  <div class="unit unit-3"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-4"></span><span class="sp-2 c-4"></span><span class="sp-3 c-4"></span><span class="sp-4 c-4"></span><span class="sp-5 c-4"></span><span class="sp-6 c-4"></span><span class="sp-7 c-4"></span><span class="sp-8 c-4"></span><span class="sp-9 c-4"></span><span class="sp-10 c-4 c-dark">D</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-4">
+  <div class="unit unit-4"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-3"></span><span class="sp-2 c-3"></span><span class="sp-3 c-3"></span><span class="sp-4 c-3"></span><span class="sp-5 c-3"></span><span class="sp-6 c-3"></span><span class="sp-7 c-3"></span><span class="sp-8 c-3"></span><span class="sp-9 c-3"></span><span class="sp-10 c-3 c-dark">C</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-5">
+  <div class="unit unit-5"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-6"></span><span class="sp-2 c-6"></span><span class="sp-3 c-6"></span><span class="sp-4 c-6"></span><span class="sp-5 c-6"></span><span class="sp-6 c-6"></span><span class="sp-7 c-6"></span><span class="sp-8 c-6"></span><span class="sp-9 c-6"></span><span class="sp-10 c-6 c-light">F</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-6">
+  <div class="unit unit-6"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-5"></span><span class="sp-2 c-5"></span><span class="sp-3 c-5"></span><span class="sp-4 c-5"></span><span class="sp-5 c-5"></span><span class="sp-6 c-5"></span><span class="sp-7 c-5"></span><span class="sp-8 c-5"></span><span class="sp-9 c-5"></span><span class="sp-10 c-5 c-dark">E</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-7">
+  <div class="unit unit-7"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-8"></span><span class="sp-2 c-8"></span><span class="sp-3 c-8"></span><span class="sp-4 c-8"></span><span class="sp-5 c-8"></span><span class="sp-6 c-8"></span><span class="sp-7 c-8"></span><span class="sp-8 c-8"></span><span class="sp-9 c-8"></span><span class="sp-10 c-8 c-light">H</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-8">
+  <div class="unit unit-8"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-7"></span><span class="sp-2 c-7"></span><span class="sp-3 c-7"></span><span class="sp-4 c-7"></span><span class="sp-5 c-7"></span><span class="sp-6 c-7"></span><span class="sp-7 c-7"></span><span class="sp-8 c-7"></span><span class="sp-9 c-7"></span><span class="sp-10 c-7 c-dark">G</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-9">
+  <div class="unit unit-9"> 
+    <div class="count" data-col-moves="0"></div> 
+    <span class="sp-1 c-10"></span><span class="sp-2 c-10"></span><span class="sp-3 c-10"></span><span class="sp-4 c-10"></span><span class="sp-5 c-10"></span><span class="sp-6 c-10"></span><span class="sp-7 c-10"></span><span class="sp-8 c-10"></span><span class="sp-9 c-10"></span><span class="sp-10 c-10 c-dark">J</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-10">
+  <div class="unit unit-10"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-9"></span><span class="sp-2 c-9"></span><span class="sp-3 c-9"></span><span class="sp-4 c-9"></span><span class="sp-5 c-9"></span><span class="sp-6 c-9"></span><span class="sp-7 c-9"></span><span class="sp-8 c-9"></span><span class="sp-9 c-9"></span><span class="sp-10 c-9 c-dark">I</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-11">
+  <div class="unit unit-11"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-12"></span><span class="sp-2 c-12"></span><span class="sp-3 c-12"></span><span class="sp-4 c-12"></span><span class="sp-5 c-12"></span><span class="sp-6 c-12"></span><span class="sp-7 c-12"></span><span class="sp-8 c-12"></span><span class="sp-9 c-12"></span><span class="sp-10 c-12 c-dark">L</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line -->
+
+<div class="line c-12">
+  <div class="unit unit-12"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-11"></span><span class="sp-2 c-11"></span><span class="sp-3 c-11"></span><span class="sp-4 c-11"></span><span class="sp-5 c-11"></span><span class="sp-6 c-11"></span><span class="sp-7 c-11"></span><span class="sp-8 c-11"></span><span class="sp-9 c-11"></span><span class="sp-10 c-11 c-light">K</span>
+  </div><!-- /.unit --> 
+</div><!-- /.line --> 
+
+</div><!-- </.col-left --> 
+
+<div class="col col-right">
+<div class="line c-1"><span class="c-name">A</span>
+  <div class="unit unit-12"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-12"></span><span class="sp-2 c-12"></span><span class="sp-3 c-12"></span><span class="sp-4 c-12"></span><span class="sp-5 c-12"></span><span class="sp-6 c-12"></span><span class="sp-7 c-12"></span><span class="sp-8 c-12"></span><span class="sp-9 c-12"></span><span class="sp-10 c-12">L</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+ <div class="line c-2"><span class="c-name">B</span>
+  <div class="unit unit-11"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-11"></span><span class="sp-2 c-11"></span><span class="sp-3 c-11"></span><span class="sp-4 c-11"></span><span class="sp-5 c-11"></span><span class="sp-6 c-11"></span><span class="sp-7 c-11"></span><span class="sp-8 c-11"></span><span class="sp-9 c-11"></span><span class="sp-10 c-11 c-light">K</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-3"><span class="c-name c-dark">C</span>
+  <div class="unit unit-10"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-10"></span><span class="sp-2 c-10"></span><span class="sp-3 c-10"></span><span class="sp-4 c-10"></span><span class="sp-5 c-10"></span><span class="sp-6 c-10"></span><span class="sp-7 c-10"></span><span class="sp-8 c-10"></span><span class="sp-9 c-10"></span><span class="sp-10 c-10 c-dark">J</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-4"><span class="c-name">D</span>
+  <div class="unit unit-9"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-9"></span><span class="sp-2 c-9"></span><span class="sp-3 c-9"></span><span class="sp-9 c-9"></span><span class="sp-5 c-9"></span><span class="sp-6 c-9"></span><span class="sp-7 c-9"></span><span class="sp-8 c-9"></span><span class="sp-9 c-9"></span><span class="sp-10 c-9 c-dark">I</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-5"><span class="c-name">E</span>
+  <div class="unit unit-8"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-8"></span><span class="sp-2 c-8"></span><span class="sp-3 c-8"></span><span class="sp-4 c-8"></span><span class="sp-5 c-8"></span><span class="sp-6 c-8"></span><span class="sp-7 c-8"></span><span class="sp-8 c-8"></span><span class="sp-9 c-8"></span><span class="sp-10 c-8 c-light">H</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-6"><span class="c-name c-light">F</span>
+  <div class="unit unit-7"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-7"></span><span class="sp-2 c-7"></span><span class="sp-3 c-7"></span><span class="sp-4 c-7"></span><span class="sp-5 c-7"></span><span class="sp-6 c-7"></span><span class="sp-7 c-7"></span><span class="sp-8 c-7"></span><span class="sp-9 c-7"></span><span class="sp-10 c-7 c-dark">G</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-7"><span class="c-name">G</span>
+  <div class="unit unit-6"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-6"></span><span class="sp-2 c-6"></span><span class="sp-3 c-6"></span><span class="sp-4 c-6"></span><span class="sp-5 c-6"></span><span class="sp-6 c-6"></span><span class="sp-7 c-6"></span><span class="sp-8 c-6"></span><span class="sp-9 c-6"></span><span class="sp-10 c-6 c-light">F</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-8"><span class="c-name c-light">H</span>
+  <div class="unit unit-5"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-5"></span><span class="sp-2 c-5"></span><span class="sp-3 c-5"></span><span class="sp-4 c-5"></span><span class="sp-5 c-5"></span><span class="sp-6 c-5"></span><span class="sp-7 c-5"></span><span class="sp-8 c-5"></span><span class="sp-9 c-5"></span><span class="sp-10 c-5 c-dark">E</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-9"><span class="c-name">I</span>
+  <div class="unit unit-4"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-4"></span><span class="sp-2 c-4"></span><span class="sp-3 c-4"></span><span class="sp-4 c-4"></span><span class="sp-5 c-4"></span><span class="sp-6 c-4"></span><span class="sp-7 c-4"></span><span class="sp-8 c-4"></span><span class="sp-9 c-4"></span><span class="sp-10 c-4 c-dark">D</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-10"><span class="c-name c-dark">J</span>
+  <div class="unit unit-3"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-3"></span><span class="sp-2 c-3"></span><span class="sp-3 c-3"></span><span class="sp-4 c-3"></span><span class="sp-5 c-3"></span><span class="sp-6 c-3"></span><span class="sp-7 c-3"></span><span class="sp-8 c-3"></span><span class="sp-9 c-3"></span><span class="sp-10 c-3 c-dark">C</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-11"><span class="c-name c-light">K</span>
+  <div class="unit unit-2"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-2"></span><span class="sp-2 c-2"></span><span class="sp-3 c-2"></span><span class="sp-4 c-2"></span><span class="sp-5 c-2"></span><span class="sp-6 c-2"></span><span class="sp-7 c-2"></span><span class="sp-8 c-2"></span><span class="sp-9 c-2"></span><span class="sp-10 c-2 c-light">B</span>
+  </div><!-- /.unit -->
+</div><!-- /.line -->
+
+<div class="line c-12"><span class="c-name">L</span>
+  <div class="unit unit-1"> 
+    <div class="count" data-col-moves="0"></div>
+    <span class="sp-1 c-1"></span><span class="sp-2 c-1"></span><span class="sp-3 c-1"></span><span class="sp-4 c-1"></span><span class="sp-5 c-1"></span><span class="sp-6 c-1"></span><span class="sp-7 c-1"></span><span class="sp-8 c-1"></span><span class="sp-9 c-1"></span><span class="sp-10 c-1 c-dark">A</span>
+  </div><!-- /.unit -->
+</div><!-- /.line --> 
+
+</div><!-- </.col-right --> 
+
+</div><!-- .container-cols -->
+<div class="subfooter"> 
+  <h3>other webcolour tools:</h3>
+ <ul>
+  <li><a href="http://meyerweb.com/eric/tools/color-blend/">Web Color Blender by Eric Meyer</a></li>
+  <li><a href="http://hslpicker.com/">HSL Color Picker by Brandon Mathis</a></li> 
+  </ul>
+</div>
+
+<footer class="footer c-11"><a href="http://atelierbram.github.io/">Atelier Playground</a></footer>
+
+<div class="bt">
+  <span class="bt--sp c-3"></span>
+  <span class="bt--sp c-4"></span>
+  <span class="bt--sp c-5"></span>
+  <span class="bt--sp c-6"></span>
+  <span class="bt--sp c-7"></span>
+  <span class="bt--sp c-8"></span> 
+  <span class="bt--sp c-9"></span>
+  <span class="bt--sp c-10"></span>
+  <span class="bt--sp c-11"></span> 
+  <span class="bt--sp c-12"></span> 
+</div>
+<div class="bb">
+  <span class="bt--sp c-3"></span>
+  <span class="bt--sp c-4"></span>
+  <span class="bt--sp c-5"></span>
+  <span class="bt--sp c-6"></span>
+  <span class="bt--sp c-7"></span>
+  <span class="bt--sp c-8"></span> 
+  <span class="bt--sp c-9"></span>
+  <span class="bt--sp c-10"></span>
+  <span class="bt--sp c-11"></span> 
+  <span class="bt--sp c-12"></span> 
+</div>
+
+<!-- http://www.html5rocks.com/en/tutorials/dnd/basics/ -->
+<script>Element.prototype.hasClassName=function(name){return new RegExp("(?:^|\\s+)"+name+"(?:\\s+|$)").test(this.className);};Element.prototype.addClassName=function(name){if(!this.hasClassName(name)){this.className=this.className?[this.className,name].join(' '):name;}};Element.prototype.removeClassName=function(name){if(this.hasClassName(name)){var c=this.className;this.className=c.replace(new RegExp("(?:^|\\s+)"+name+"(?:\\s+|$)","g"),"");}};var samples=samples||{};(function(){var clx_='col';var cols_=document.querySelectorAll('.'+clx_+' .unit');var dragSrcEl_=null;this.handleDragStart=function(e){e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/html',this.innerHTML);dragSrcEl_=this;this.addClassName('moving');};this.handleDragOver=function(e){if(e.preventDefault){e.preventDefault();}
+      e.dataTransfer.dropEffect='move';return false;};this.handleDragEnter=function(e){this.addClassName('over');};this.handleDragLeave=function(e){this.removeClassName('over');};this.handleDrop=function(e){if(e.stopPropagation){e.stopPropagation();}
+      if(dragSrcEl_!=this){dragSrcEl_.innerHTML=this.innerHTML;this.innerHTML=e.dataTransfer.getData('text/html');var count=this.querySelector('.count');var newCount=parseInt(count.getAttribute('data-col-moves'))+1;count.setAttribute('data-col-moves',newCount);count.textContent='moves: '+newCount;}
+      return false;};this.handleDragEnd=function(e){[].forEach.call(cols_,function(col){col.removeClassName('over');col.removeClassName('moving');});};[].forEach.call(cols_,function(col){col.setAttribute('draggable','true');col.addEventListener('dragstart',this.handleDragStart,false);col.addEventListener('dragenter',this.handleDragEnter,false);col.addEventListener('dragover',this.handleDragOver,false);col.addEventListener('dragleave',this.handleDragLeave,false);col.addEventListener('drop',this.handleDrop,false);col.addEventListener('dragend',this.handleDragEnd,false);});})();</script>
+  </body>
+</html> 
+
+
+ 
