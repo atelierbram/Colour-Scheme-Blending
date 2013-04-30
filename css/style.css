@@ -17,6 +17,7 @@
   -webkit-user-drag: element;
 }
 .unit {
+  float: left;
   position: relative;
   height: 100px;
   width: 100px;
@@ -27,6 +28,12 @@
   border-radius: 50%;
   text-align: center;
   cursor: move;
+} 
+.unit-l {
+  float: left;
+}
+.unit-r {
+  float: right;
 } 
 .unit span {
   position: absolute;
@@ -109,7 +116,7 @@
 } 
 body {
   font: 100%/1.375 AvenirNextCondensed-Regular, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Segoe Ui", Optima, "Trebuchet MS", Geneva, "Bitstream Vera Sans", "DejaVu Sans", Verdana, sans-serif; 
-  background-color: #eee;
+  background-color: #fff;
   color: #000; 
   position: relative;
 } 
@@ -135,7 +142,8 @@ a, a:link {
 } 
 .header {  
   font-family: AvenirNextCondensed-DemiBold, "Lucida Grande", "Lucida Sans", "Segoe Ui", "Trebuchet MS", sans-serif; 
-  height: 94px;
+  height: 83px;
+  margin-bottom: 1em;
 }
 .footer {
   height: 40px;
@@ -143,8 +151,9 @@ a, a:link {
 }
 .title {  
   color: #FFF7F2;
-  font-size: 2em;
   text-transform: capitalize; 
+  font-size: 2.25em;
+  margin-top: -.5em;
 } 
 .tagline {  
   font-size: 1.125em;
@@ -153,31 +162,17 @@ a, a:link {
   border-bottom: 1px solid #BA1920;
 } 
 
-.unit {
-  float: left;
+.line {
+  margin: 0 auto 2em;
 } 
-.container-cols {
-  margin: 1.5em auto 3em;
-} 
-.container-cols,
-.col,
+.row,
 .line { 
   overflow: auto;
 }
-.col { 
-  width: 50%;
-} 
-.col-left,
-.col-left .unit { 
-  float: left;
-} 
-.col-right, 
-.col-right .unit { 
-  float: right;
-} 
 .c-name {
-  display: inline-block;
-  padding: 1em;
+  display: block;
+  text-align: center;
+  margin-top: 1em;
 } 
 .sp-1 {
   width: 100%;
@@ -251,7 +246,7 @@ a, a:link {
   z-index: 1;
 } 
 .bt {
-  top: 96px;
+  top: 85px;
 }
 .bb {
   bottom: 42px;
@@ -307,9 +302,8 @@ style[contenteditable] {
   } 
 } 
 @media only screen and (min-width: 600px) {
-  .container-cols {
+  .line {
     width: 37.5em;
-    box-shadow: 0px 12px 24px #888;
   }
   .unit {
     height: 200px;
@@ -320,7 +314,7 @@ style[contenteditable] {
   } 
 }  
 @media only screen and (min-width: 800px) {
-  .container-cols {
+  .line {
     width: 50em;
   }
   .unit {
