@@ -17,7 +17,6 @@
   -webkit-user-drag: element;
 }
 .unit {
-  float: left;
   position: relative;
   height: 100px;
   width: 100px;
@@ -29,7 +28,9 @@
   text-align: center;
   cursor: move;
 } 
-.unit-l {
+.unit-l,
+.b--sp, 
+.subfooter li {
   float: left;
 }
 .unit-r {
@@ -252,15 +253,13 @@ a, a:link {
   bottom: 42px;
   border-top: 1px solid #BA1920;
 } 
-.bt--sp {
-  float: left;
+.b--sp {
   width: 10%;
   height: 12px;
-  /* display: block; */
 }
 .subfooter {
   margin: 1em auto;
-  width: 40%;
+  /* width: 40%; */
   padding: 1em; 
 }
 .subfooter ul {
@@ -268,7 +267,8 @@ a, a:link {
   color: #087282;
 }
 .subfooter li {
-  display: block;
+  width: 30%;
+  margin-left: 3.33%
 } 
 .subfooter a {
   display: block;
