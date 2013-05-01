@@ -116,7 +116,7 @@
   background-color: hsl(22, 90%, 64%);
 } 
 body {
-  font: 100%/1.375 AvenirNextCondensed-Regular, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Segoe Ui", Optima, "Trebuchet MS", Geneva, "Bitstream Vera Sans", "DejaVu Sans", Verdana, sans-serif; 
+  font: 100%/1.375 AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Segoe Ui", "DejaVu Sans", Verdana, sans-serif; 
   background-color: #fff;
   color: #000; 
   position: relative;
@@ -142,8 +142,8 @@ a, a:link {
   padding-bottom: .5em;
 } 
 .header {  
-  font-family: AvenirNextCondensed-DemiBold, "Lucida Grande", "Lucida Sans", "Segoe Ui", "Trebuchet MS", sans-serif; 
-  height: 83px;
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande", "Lucida Sans", "Segoe Ui", "Trebuchet MS", sans-serif; 
+  height: 56px;
   margin-bottom: 1em;
 }
 .footer {
@@ -153,16 +153,20 @@ a, a:link {
 .title {  
   color: #FFF7F2;
   text-transform: capitalize; 
-  font-size: 2.25em;
+  font-size: 1.5em;
   margin-top: -.5em;
 } 
 .tagline {  
-  font-size: 1.125em;
+  font-size: .75em;
   color: #3D0C0A;
   padding-bottom: .5em;
   border-bottom: 1px solid #BA1920;
 } 
-
+.title,  
+.tagline {  
+  white-space: nowrap;
+text-overflow: ellipsis;
+} 
 .line {
   margin: 0 auto 2em;
 } 
@@ -247,7 +251,7 @@ a, a:link {
   z-index: 1;
 } 
 .bt {
-  top: 85px;
+  top: 58px;
 }
 .bb {
   bottom: 42px;
@@ -312,6 +316,18 @@ style[contenteditable] {
   .unit .sp-10 { 
     line-height: 1.75;
   } 
+ .header {  
+  height: 83px;
+} 
+ .title {  
+  font-size: 2.25em;
+} 
+ .tagline {  
+  font-size: 1.125em; 
+}
+ .bt {
+  top: 85px;
+} 
 }  
 @media only screen and (min-width: 800px) {
   .line {
@@ -333,6 +349,8 @@ style[contenteditable] {
     left: 0;
     top: 0;
     z-index: 2;
+    -webkit-box-shadow: 1px 3px 12px hsla(0,0%,0%,.5);
+    box-shadow: 1px 3px 12px hsla(0,0%,0%,.5);
   }
 } 
 
