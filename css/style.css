@@ -144,7 +144,7 @@ a, a:link {
 .header {  
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande", "Lucida Sans", "Segoe Ui", "Trebuchet MS", sans-serif; 
   height: 56px;
-  margin-bottom: 1em;
+  margin-bottom: .75em;
 }
 .footer {
   height: 40px;
@@ -170,6 +170,9 @@ text-overflow: ellipsis;
 .line {
   margin: 0 auto 2em;
 } 
+.row {
+  position: relative;
+}
 .row,
 .line { 
   overflow: auto;
@@ -285,15 +288,46 @@ text-overflow: ellipsis;
 }
 h3 { 
   color: #087282;
+  text-transform: capitalize;
 }
 head {display: block;}
-style[contenteditable] {
+
+/* color-converter */
+/* http://www.standardista.com/hsla-color-picker/ */
+/* https://github.com/estelle/HSLA-Color-Converter */
+style[contenteditable],
+.color-converter,
+.example {
   font: .75em/1.33 Consolas, "DejaVu Sans Mono", Monaco, monospace;
+} 
+
+style[contenteditable],
+.color-converter {
   white-space: pre;
   padding: 0.5em;
   background: white;
   background: hsla(360, 100%, 100%, 0.5);
-  display: none;
+  color: black;
+  position: absolute;
+  width: 310px;
+  right: 0;
+  top: 0; 
+  display: block;
+   -webkit-box-shadow: 1px 3px 12px hsla(0,0%,0%,.5);
+  box-shadow: 1px 3px 12px hsla(0,0%,0%,.5); 
+  z-index: 2;
+}
+.example {
+  background-color:  hsla(328, 100%, 44%, 1);
+  padding: 15px;
+  color: #FFF;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  font-size: 1.75em;
+  text-align: center;
+}
+input[type="range"]  {
+  width: 210px;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 454px) {
@@ -341,18 +375,6 @@ style[contenteditable] {
     line-height: 2.5;
   } 
 } 
-@media only screen and (min-width: 1200px) {
-  style[contenteditable] { 
-    display: block; 
-    position: fixed;
-    width: 312px;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    -webkit-box-shadow: 1px 3px 12px hsla(0,0%,0%,.5);
-    box-shadow: 1px 3px 12px hsla(0,0%,0%,.5);
-  }
-} 
 
 /* Fashion Color Report Collection - Women’s Spring 2013
  * http://www.pantone.com/pages/products/product.aspx?pid=1333&ca=4 
@@ -360,4 +382,4 @@ style[contenteditable] {
  * http://www.thecolorswatch.com/
  * http://marivecchio.blogspot.nl/2013/01/fata-e-strega-insiemein-primavera-si-puo.html
  */
- 
+
